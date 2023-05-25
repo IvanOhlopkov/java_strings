@@ -8,7 +8,7 @@ public class SplitText {
 
     public static String splitTextIntoWords(String text) {
         //TODO реализуйте метод
-        String[] words = text.replaceAll("[.,0-9;`]", "").split("\s+");
+        String[] words = text.replaceAll("[.,0-9;`]", "").split(" +");
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < words.length; i++) {
             if (i == words.length - 1) {
